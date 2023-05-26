@@ -8,7 +8,11 @@ require('dotenv').config()
 
 // Middleware Part 
 
-app.use(cors())
+app.use(cors({
+  origin: "https://khelna-chai-server-side.onrender.com",
+  headers: ["Content-Type"],
+  credentials: true,
+}));
 app.options("", cors(corsConfig))
 
 app.use(express.json());
