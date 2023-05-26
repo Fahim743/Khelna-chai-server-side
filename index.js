@@ -13,7 +13,7 @@ app.use(cors({
   headers: ["Content-Type"],
   credentials: true,
 }));
-app.options("", cors(corsConfig))
+// app.options("", cors(corsConfig))
 
 app.use(express.json());
 
